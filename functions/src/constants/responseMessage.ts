@@ -26,4 +26,7 @@ module.exports = {
     
     // 검색
     SEARCH_SUCCESS: "데일리스트 검색 성공",
+
+    // 상세조회
+    PLAYLIST_DETAIL_READ_SUCCESS: "데일리스트 상세조회 성공",
 };
