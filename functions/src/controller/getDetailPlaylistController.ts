@@ -20,12 +20,12 @@ export default async (req: Request, res: Response) => {
     try {
         db.getConnection((err: any, connection: any) => {
             if (err) throw err;
-            connection.query(sql, [userId, playlistId], (err: any, result: any, fields: any) => {
+            connection.query(sql, [playlistId, userId], (err: any, result: any, fields: any) => {
                 if(err) {
                     console.error("connectionPool GET Error");
                     res.status(statusCode.INTERNAL_SERVER_ERROR).send(util.fail(statusCode.INTERNAL_SERVER_ERROR, responseMessage.INTERNAL_SERVER_ERROR));
                 } else {
-                    const queryResult = convertSnakeToCamel.keysToCamel(result);
+                    const queryResult = convertSnakeToCamel.keysToCamel(result[0]);
                     res.status(statusCode.OK).send(util.success(statusCode.OK, responseMessage.PLAYLIST_DETAIL_READ_SUCCESS, queryResult));
                 }
             })
