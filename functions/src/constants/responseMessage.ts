@@ -22,5 +22,8 @@ module.exports = {
     NO_USER: "존재하지 않는 회원입니다.",
 
     // 메인
-    MAIN_CALENDAR_READ_SUCCESS: "월별 캘린더 플레이리스트 조회 성공"
+    MAIN_CALENDAR_READ_SUCCESS: "월별 캘린더 플레이리스트 조회 성공",
+    
+    // 검색
+    SEARCH_SUCCESS: "데일리스트 검색 성공",
 };
