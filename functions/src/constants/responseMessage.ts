@@ -29,4 +29,7 @@ module.exports = {
 
     // 상세조회
     PLAYLIST_DETAIL_READ_SUCCESS: "데일리스트 상세조회 성공",
+
+    // 등록
+    PLAYLIST_REGISTER_SUCCESS: "데일리스트 생성 성공",
 };
