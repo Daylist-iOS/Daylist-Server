@@ -47,6 +47,7 @@ app.use(bodyParser.json());
 // 라우팅
 app.use("/user", require("./api/user"));
 app.use("/main", require("./api/main"));
+app.use("/search", require("./api/search"));
 
 // route 폴더에 우리가 지정한 경로가 아닌 다른 경로로 요청이 올 경우,
 // 잘못된 경로로 요청이 들어왔다는 메시지를 클라이언트에 보냄
