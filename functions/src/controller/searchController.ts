@@ -15,7 +15,7 @@ export default async (req: Request, res: Response) => {
     const userId = req.params.userId;
     const keyword = req.body.keyword;
 
-    const sql = "select id as playlist_id, user_id, title, description, thumbnail_image, media_link, emotion, created_at from playlist where user_id = ? and is_deleted = 0 and match(title) AGAINST(?)";
+    const sql = "select id as playlist_id, user_id, title, description, thumbnail_image, media_link, emotion, created_at from playlist where user_id = ? and is_deleted = 0 and match(title, description) AGAINST(?)";
     
     try {
         db.getConnection((err: any, connection: any) => {
