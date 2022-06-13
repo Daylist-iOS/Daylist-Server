@@ -20,4 +20,7 @@ module.exports = {
     LOGIN_SUCCESS: "로그인 성공",
     LOGIN_FAIL: "로그인 실패",
     NO_USER: "존재하지 않는 회원입니다.",
+
+    // 메인
+    MAIN_CALENDAR_READ_SUCCESS: "월별 캘린더 플레이리스트 조회 성공"
 };
